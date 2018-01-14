@@ -169,7 +169,7 @@ public class SearchableSelectionController extends LabeledFieldController {
         }
         else if (selectionDialog == null) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
-            builder.setTitle("Select " + getLabel());
+            builder.setTitle(getLabel());
 
             View searchableList = LayoutInflater.from(context).inflate(R.layout.searchable_listview, null);
             final List<String> filteredItems = new ArrayList<String>(items);
